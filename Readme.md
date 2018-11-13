@@ -1,6 +1,7 @@
 # Учебный проект «Барбершоп»
 
 * Студент: [Денис Евтушенко](https://up.htmlacademy.ru/htmlcss/23/user/2726).
+* Наставник: [Антон Попов](https://htmlacademy.ru/profile/joker).
 
 ---
 
