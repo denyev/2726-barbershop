@@ -34,7 +34,7 @@
     </ul>
     <ul class="main-navigation__user-list">
       <li class="main-navigaation__user-item">
-        <a class="main-navigation__user-link" href="login.html" title="Войти в личный кабинет">Вход</a>
+        <a class="main-navigation__user-link" href="#modal_login" title="Войти в личный кабинет">Вход</a>
       </li>
     </ul>
   </nav>
@@ -168,64 +168,152 @@
     </ul>
     <div class="pagination">
       <ul class="pagination__list">
-        <li class="paginaton__item">
-          <a class="paination__link" href="#" title="Перейти на первую страницу">1</a>
+        <li class="pagination__item">
+          <a class="pagination__link" href="#" title="Перейти на первую страницу">1</a>
         </li>
-        <li class="paginaton__item">
-          <a class="paination__link paination__link--active" title="Текущая страница">2</a>
+        <li class="pagination__item">
+          <a class="pagination__link pagination__link--active" title="Текущая страница">2</a>
         </li>
-        <li class="paginaton__item">
-          <a class="paination__link" href="?page=3" title="Перейти на третью страницу">3</a>
+        <li class="pagination__item">
+          <a class="pagination__link" href="?page=3" title="Перейти на третью страницу">3</a>
         </li>
-        <li class="paginaton__item">
-          <a class="paination__link" href="?page=4" title="Перейти на четвёртую страницу">4</a>
+        <li class="pagination__item">
+          <a class="pagination__link" href="?page=4" title="Перейти на четвёртую страницу">4</a>
         </li>
       </ul>
     </div>
   </section>
   <section class="filters">
-    <h2 class="visually-hidden">Фильтр товаров</h2><!-- Форма с фильтром товаров-->
+    <h2 class="visually-hidden">Фильтр товаров</h2>
+
+    <fieldset class="filters__group">
+      <legend class="filters__title">Производители:</legend>
+
+      <label class="filters__field">
+        <input class="filters__checkbox" name="brand" type="checkbox" value="Baxter of California" checked>
+        <span class="filters__title">Baxter of California</span>
+      </label>
+
+      <label class="filters__field">
+        <input class="filters__checkbox" name="brand" type="checkbox" value="Mr Natty">
+        <span class="filters__title">Mr Natty</span>
+      </label>
+
+      <label class="filters__field">
+        <input class="filters__checkbox" name="brand" type="checkbox" value="Suavecito" checked>
+        <span class="filters__title">Suavecito</span>
+      </label>
+
+      <label class="filters__field">
+        <input class="filters__checkbox" name="brand" type="checkbox" value="Malin+Goetz">
+        <span class="filters__title">Malin+Goetz</span>
+      </label>
+
+      <label class="filters__field">
+        <input class="filters__checkbox" name="brand" type="checkbox" value="Murray’s">
+        <span class="filters__title">Murray’s</span>
+      </label>
+
+      <label class="filters__field">
+        <input class="filters__checkbox" name="brand" type="checkbox" value="American Crew" checked>
+        <span class="filters__title">American Crew</span>
+      </label>
+    </fieldset>
+
+    <fieldset class="filters__group">
+      <legend class="filters__title">Группы товаров:</legend>
+
+      <label class="filters__field">
+        <input class="filters__checkbox" name="category" type="radio" value="Бритвенные принадлежности">
+        <span class="filters__title">Бритвенные принадлежности</span>
+      </label>
+
+      <label class="filters__field">
+        <input class="filters__checkbox" name="category" type="radio" value="Средства для ухода" checked>
+        <span class="filters__title">Средства для ухода</span>
+      </label>
+
+      <label class="filters__field">
+        <input class="filters__checkbox" name="category" type="radio" value="Аксессуары">
+        <span class="filters__title">Аксессуары</span>
+      </label>
+    </fieldset>
+
+    <button class="filters__button" type="submit">Показать</button>
   </section>
-  <footer class="main-footer">
-    <div class="main-footer__wrap">
-      <div class="main-footer__column">
-        <div class="contacts">
-          <p class="contacts__title"></p>
-          <p class="contacts__text">Адрес: г.&nbsp;Санкт-Петербург, ул.&nbsp;Б.&nbsp;Конюшенская, д.&nbsp;19/8</p>
-          <p class="contacts__text"><a class="contacts__link" href="#" title="Перейти к карте">Как нас найти?</a></p>
-          <p class="contacts__text">Телефон: <a class="contacts__link contacts__link--phone" href="tel:+74956660266"
-                                                title="Позвоните нам!">+7&nbsp;(495)&nbsp;666-02-66</a></p>
-        </div>
-      </div>
-      <div class="main-footer__column">
-        <div class="socials">
-          <b class="socials__title">Давайте дружить!</b>
-          <ul class="socials__list">
-            <li class="socials__item">
-              <a class="socials__link socials__link--vk" href="//vk.com" target="_blank"
-                 rel="nofollow">Вконтакте</a>
-            </li>
-            <li class="socials__item">
-              <a class="socials__link socials__link--fb" href="//fb.com" target="_blank"
-                 rel="nofollow">Facebook</a>
-            </li>
-            <li class="socials__item">
-              <a class="socials__link socials__link--inst" href="//instagram.com" target="_blank"
-                 rel="nofollow">Instagram</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="main-footer__column">
-        <div class="designed">
-          <b class="designed__title">Разработано:</b>
-          <a class="designed__link" href="//htmlacademy.ru/intensive/htmlcss"
-             title="Разработано в htmlacademy.ru" target="_blank" rel="nofollow">HTML Academy</a>
-        </div>
+</main>
+<footer class="main-footer">
+  <div class="main-footer__wrap">
+    <div class="main-footer__column">
+      <div class="contacts">
+        <p class="contacts__text">Адрес: г.&nbsp;Санкт-Петербург, ул.&nbsp;Б.&nbsp;Конюшенская, д.&nbsp;19/8</p>
+        <p class="contacts__text">
+          <a class="contacts__link" href="#map" title="Перейти к карте">Как нас найти?</a>
+        </p>
+        <p class="contacts__text">
+          Телефон: <a class="contacts__link contacts__link--phone" href="tel:+74956660266"
+                      title="Позвоните нам!">+7&nbsp;(495)&nbsp;666-02-66</a>
+        </p>
       </div>
     </div>
-  </footer>
-</main>
+    <div class="main-footer__column">
+      <div class="socials">
+        <b class="socials__title">Давайте дружить!</b>
+        <ul class="socials__list">
+          <li class="socials__item">
+            <a class="socials__link socials__link--vk" href="//vk.com" target="_blank" rel="nofollow">Вконтакте</a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link socials__link--fb" href="//fb.com" target="_blank" rel="nofollow">Facebook</a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link socials__link--inst" href="//instagram.com" target="_blank"
+               rel="nofollow">Instagram</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="main-footer__column">
+      <div class="designed">
+        <b class="designed__title">Разработано:</b>
+        <a class="designed__link" href="//htmlacademy.ru/intensive/htmlcss"
+           title="Разработано в htmlacademy.ru" target="_blank" rel="nofollow">HTML Academy</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<section class="login" id="modal_login">
+  <h2 class="title">Личный кабинет</h2>
+
+  <p>Введите, пожалуйста, свой логин и пароль</p>
+  <form class="login__form" action="#" method="post">
+    <label class="login__form-title" for="login">Логин</label>
+    <input class="login__form-field" id="login" name="login" type="text" placeholder="Логин">
+
+    <label class="login__form-title" for="password">Пароль</label>
+    <input class="login__form-field" id="password" name="password" type="password" placeholder="Пароль">
+
+    <label class="login__form-title" for="remember_me">Запомните меня</label>
+    <input class="login__form-field" id="remember_me" name="remember_me" type="checkbox" checked>
+
+    <a class="login__form-link" href="#">Я забыл пароль!</a>
+
+    <button class="button" type="submit">Войти</button>
+  </form>
+
+  <button class="button-close" type="button">Закрыть</button>
+</section>
+
+<section class="map" id="map">
+  <h2 class="visually-hidden">Как к нам проехать</h2>
+
+  <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.59894241241!2d30.32089461620896!3d59.93879686904772!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1543435710920"
+      width="766" height="560" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+  <button class="button-close" type="button">Закрыть</button>
+</section>
 <script src="js/main.js"></script>
 </body>
 </html>
